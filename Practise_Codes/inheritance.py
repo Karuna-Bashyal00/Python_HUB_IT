@@ -1,5 +1,5 @@
 
-# note: Single Inheritance
+# todo: Single Inheritance
 # class Father():
 #     def eat(self):
 #         print("Father eats Banana")
