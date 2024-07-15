@@ -40,18 +40,63 @@
 #         print("Father's Name is: ", self.father_Name)
 #         print("Mother's Name is: ", self.mother_Name)
 
-# !(object-name) = (Child_class())
+# ?(object-name) = (Child_class())
 # son1 = Son()
 # son1.father_Name = "Ravi"
 # son1.mother_Name = "Rani"
 # son1.details()
 
 # note: Multilevel Inheritance
-class GrandFather():
-    pass
+# class GrandFather():
+#     def __init__(self, grandfathername):
+#         self.grandfathername = grandfathername
 
-class Father(GrandFather):
-    pass
+# class Father(GrandFather):
+#     def __init__(self, fathername, grandfathername):
+#         self.fathername = fathername
+        
+#         GrandFather.__init__(self, grandfathername)
+    
+# class Daughter(Father):
+#     def __init__(self, daughtername, fathername, grandfathername):
+#         self.daughtername = daughtername
+        
+#         Father.__init__(self, fathername, grandfathername)
+        
+#     def print_details(self):
+#         print("Grandfather name :", self.grandfathername)
+#         print("Father name :" + self.fathername)
+#         print("Daughter name :" + self.daughtername)
 
-class Child(Father):
-    pass
+# daughter1 = Daughter('deepsikha', 'dipendra', 'dinesh')
+# print(daughter1.grandfathername)
+# daughter1.print_details()
+
+# note: Hierarchical Inheritance
+class ParentClasss():
+    def food1(self):
+        print("ParentClass Food is Chowmein.")
+
+class Child1(ParentClasss):
+    def food2(self):
+        print("Child1 Food is Burger.")
+
+class Child2(ParentClasss):
+    def food3(self):
+        print("Child2 Food is Pizza.")
+
+children1 = Child1()
+children2 = Child2()
+
+print("--------Child1-----------")
+children1.food1()
+children1.food2()
+
+print("--------Child2-----------")
+children2.food1()
+children2.food3()   
+
+     
+
+
+
