@@ -36,6 +36,6 @@ person = Person('Karuna',19,100)
 # print(person.__salary)
 
 # ?name mangling method
-# print(person._Person__salary)
+print(person._Person__salary)
 
-person.display_details()
+# person.display_details()

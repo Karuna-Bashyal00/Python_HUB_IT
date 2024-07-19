@@ -55,6 +55,7 @@
 #     def __init__(self, fathername, grandfathername):
 #         self.fathername = fathername
         
+#         # (Parent_Class)(.)__init__(data haru lekhni)
 #         GrandFather.__init__(self, grandfathername)
     
 # class Daughter(Father):
