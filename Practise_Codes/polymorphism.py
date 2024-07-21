@@ -14,7 +14,8 @@
 # note: Polymorphism in Inheritance
 # class Shape:
 #     def draw(self):
-#         raise NotImplementedError("Parent class ma kei lekhna paidaina.")
+#         pass
+#         # raise NotImplementedError("Parent class ma kei lekhna paidaina.")
     
 # class Circle(Shape):
 #     def draw(self):
@@ -83,3 +84,4 @@ object_china = China()
 details(object_nepal)
 details(object_india)
 details(object_china)
+
