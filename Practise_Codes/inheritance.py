@@ -18,19 +18,19 @@
 # child1.eats()
 
 # note: Multiple Inheritance
-# *Parent Class
+# # *Parent Class
 # class Father():
 #     father_Name = ""
 #     def father(self):
 #         print(self.father_Name)
 
-# *Parent Class
+# # *Parent Class
 # class Mother():
 #     mother_Name = ""
 #     def mother(self):
 #         print(self.mother_Name)
 
-# *Child Class
+# # *Child Class
 # class Son(Father, Mother):
 #     def __init__(self, name='virat'):
 #         self.name = name
@@ -40,7 +40,7 @@
 #         print("Father's Name is: ", self.father_Name)
 #         print("Mother's Name is: ", self.mother_Name)
 
-# ?(object-name) = (Child_class())
+# # ?(object-name) = (Child_class())
 # son1 = Son()
 # son1.father_Name = "Ravi"
 # son1.mother_Name = "Rani"
@@ -55,7 +55,7 @@
 #     def __init__(self, fathername, grandfathername):
 #         self.fathername = fathername
         
-#         # (Parent_Class)(.)__init__(data haru lekhni)
+# #         # (Parent_Class)(.)__init__(data haru lekhni)
 #         GrandFather.__init__(self, grandfathername)
     
 # class Daughter(Father):

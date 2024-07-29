@@ -2,15 +2,17 @@
 # note: Map Function 
 # ! Program to calculate square of a number in a iterable list
 
-# def square(x):
-#     return x*x
-
 # numbers = [1,2,3,4,5]
 
-# ?map (function, iterable)
-# final_square = map(square, numbers)
+# def square(x):
+#     return x * x
 
-# print(final_square)
+# final_square = map(square,numbers)
+
+# print(list(final_square))
+
+# ?map (function, iterable)
+
 
 # note: Map Function Using Lambda
 # numbers = [1,2,3,4,5]
@@ -21,12 +23,14 @@
 # note: Filter Function
 # ! Program to calculate even numbers from a list
 
-# def is_even(x):
-#     return x % 2 == 0
+# numbers = [2,3,4,5,6,7,8,9,10]
 
-# numbers = [1,2,3,4,5,6,7,8,9,10]
-# even_numbers = filter(is_even, numbers)
-# print(list(even_numbers))
+# def even_number(x):
+#     return x if x%2 == 0 else None
+
+# check_even = filter(even_number, numbers)
+
+# print(tuple(check_even))
 
 # note: Filter Function Using Lambda
 # numbers = [1,2,3,4,5,6,7,8,9,10]
@@ -38,10 +42,11 @@
 
 # from functools import reduce
 
+# numbers = [1,2,3,4,5]
+
 # def sum_numbers(x,y):
 #     return x + y
 
-# numbers = [1,2,3,4,5]
 # total_sum = reduce(sum_numbers, numbers)
 # print(total_sum)
 
@@ -56,12 +61,26 @@
 # print(min_value)
 
 # ! Program to calculate minimum value using lambda
+# from functools import reduce
+
+# numbers = [1,2,3,4,5]
+# min_value = reduce(lambda x,y: x if x<y else y, numbers)
+# print(min_value)
+
 from functools import reduce
 
 numbers = [1,2,3,4,5]
-min_value = reduce(lambda x,y: x if x<y else y, numbers)
-print(min_value)
 
+def square(x):
+    return x*x
 
+def addition(x,y):
+    return x+y
+
+final_square = list(map(square, numbers))
+
+reduced_sum = reduce(addition, final_square)
+
+print(f"Sum Of Squared Numbers:", reduced_sum)
 
 
