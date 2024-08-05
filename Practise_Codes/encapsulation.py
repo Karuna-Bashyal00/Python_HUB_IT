@@ -31,11 +31,11 @@ class Person:
         
 person = Person('Karuna',19,100)
 
-# print(person.name)
-# print(person._age)
+print(person.name)
+print(person._age)
 # print(person.__salary)
 
-# ?name mangling method
+# # ?name mangling method
 print(person._Person__salary)
 
-# person.display_details()
+person.display_details()

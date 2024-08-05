@@ -14,7 +14,8 @@
 # note: Polymorphism in Inheritance
 # class Shape:
 #     def draw(self):
-#         raise NotImplementedError("Parent class ma kei lekhna paidaina.")
+#         pass
+#         # raise NotImplementedError("Parent class ma kei lekhna paidaina.")
     
 # class Circle(Shape):
 #     def draw(self):
@@ -28,7 +29,7 @@
 #     def draw(self):
 #         print("Drawing a rectangle.")
 
-# shapes = [Circle(), Square(), Rectangle()]
+# shapes = [Circle(), Square(), Rectangle()]    
 
 # for shape in shapes:
 #     shape.draw()
@@ -51,35 +52,36 @@
 #     print(make_sound(animal))
 
 # note: Use of polymorphism without loop in Function
-class Nepal():
-    def language(self):
-        print ("Nepali")
+# class Nepal():
+#     def language(self):
+#         print ("Nepali")
     
-    def currency(self):
-        print ("Rupaiya")
+#     def currency(self):
+#         print ("Rupaiya")
 
-class India():
-    def language(self):
-        print ("Hindi")
+# class India():
+#     def language(self):
+#         print ("Hindi")
     
-    def currency(self):
-        print ("Rupees")
+#     def currency(self):
+#         print ("Rupees")
     
-class China():
-    def language(self):
-        print ("Chinese")
+# class China():
+#     def language(self):
+#         print ("Chinese")
 
-    def currency(self):
-        print ("Yuan")
+#     def currency(self):
+#         print ("Yuan")
 
-def details(object):
-    object.language()
-    object.currency()
+# def details(object):
+#     object.language()
+#     object.currency()
 
-object_nepal = Nepal()
-object_india = India()
-object_china = China()
+# object_nepal = Nepal()
+# object_india = India()
+# object_china = China()
 
-details(object_nepal)
-details(object_india)
-details(object_china)
+# details(object_nepal)
+# details(object_india)
+# details(object_china)
+
