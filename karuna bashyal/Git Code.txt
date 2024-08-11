@@ -1,0 +1,15 @@
+git init 
+(folder ma git lai setup gardinxa)
+
+git add .
+(file lai git ma add garna)
+
+git commit -m 'first commit'
+(program k ko barema ho vanera)
+
+git add remote <https://github.com/mrinal1000/python-basic.git>
+(naya GitHub lai folder ma setup garna use hunxa)
+(ekchoti setup garesi arko choti garna pardena)
+
+git push -u origin <branch-name>
+(last ma push garna lai)
